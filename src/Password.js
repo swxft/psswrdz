@@ -71,7 +71,7 @@ function Password() {
           <button onClick={() => {
             const strength = zxcvbn(password);
             setPasswordStrength(checkPasswordStrength(strength))}} 
-            className="button">Check password strength</button>
+            className="button">Check 💪</button>
         </div>
         <div>
           {passwordStrength}
