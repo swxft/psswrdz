@@ -46,7 +46,6 @@ function Password() {
   }
 
   function generatePassword() {
-    // console.log('generating password');
     const password = [];
     for (let i = 0; i < 8; i++) {
       password.push(randomCharacter());
@@ -64,14 +63,15 @@ function Password() {
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         />
+
         <div>
           <button onClick={(e) => {
-            generatePassword();
-          }} className="button">Generate</button>
+            generatePassword();}} 
+            className="button">Generate</button>
           <button onClick={() => {
-            setPasswordStrength(checkPasswordStrength(strength));
             const strength = zxcvbn(password);
-          }} className="button">Check password strength</button>
+            setPasswordStrength(checkPasswordStrength(strength))}} 
+            className="button">Check password strength</button>
         </div>
         <div>
           {passwordStrength}

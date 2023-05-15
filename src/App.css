@@ -1,7 +1,12 @@
+
 .App {
   /* text-align: center; */
   width: 60%;
   margin: 1rem auto;
+  text-align: center;
+  border: 1px solid #8e9aaf;
+  margin: auto;
+  margin-top: 20vh;
 }
 
 .App-logo {
@@ -38,4 +43,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  width: 50vw;
+  padding: 0;
 }
